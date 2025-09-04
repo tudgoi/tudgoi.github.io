@@ -21,6 +21,9 @@
       dd::before {
           content: '';
       }
+      dd {
+        padding-left: 1em;
+      }
     </style>
     <header>
         <b><a href="https:&#x2F;&#x2F;tudgoi.github.io&#x2F;">The Unofficial Directory — Government of India</a></b>
@@ -40,16 +43,16 @@
     grid-area: title;
   }
 
+  div.offices {
+    grid-area: offices;
+  }
+
   div.contacts {
     grid-area: contacts;
   }
 
-  div.links {
-    grid-area: links;
-  }
-
-  div.backlinks {
-    grid-area: backlinks;
+  div.subordinates {
+    grid-area: subordinates;
   }
 
   div.sources {
@@ -64,9 +67,9 @@
       "maintenance"
       "title"
       "photo"
+      "offices"
       "contacts"
-      "links"
-      "backlinks"
+      "subordinates"
       "sources";
     margin-bottom: 1em;
   }
@@ -77,9 +80,9 @@
       grid-template-areas:
         "maintenance maintenance"
         "photo title"
+        "photo offices"
         "photo contacts"
-        "photo links"
-        "backlinks backlinks"
+        "subordinates subordinates"
         "sources sources";
     }
   }
@@ -141,14 +144,12 @@
     
       
     
-        
-        
     
     <style>
     </style>
     <figure >
         <div class="photo-bg">
-            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;cd&#x2F;Kambhampati_Hari_Babu.jpg" alt="Kambhampati Hari Babu" />
+            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;65&#x2F;No-Image-Placeholder.svg" alt="Kambhampati Hari Babu" />
         </div>
         
     </figure>
@@ -157,7 +158,11 @@
   </div>
   <div class="title">
     <h2>Kambhampati Hari Babu</h2>
+    <hr/>
+  </div>
+  <div class="contacts">
     
+    <hr/>
     <dl class="contact-list">
       
         
@@ -200,13 +205,15 @@
       
     </dl>
     
-    <hr/>
   </div>
-  <div class="contacts">
-  
-  
-    <h5>Governor of Odisha</h5>
+  <div class="offices">
     
+      <dl class="office-list">
+        
+          <dt>Governor of Odisha</dt>
+          <dd>
+          
+            
     <dl class="contact-list">
       
         
@@ -248,8 +255,10 @@
         
       
     </dl>
-    
-    
+
+          
+          
+            
     <dl>
       
         
@@ -269,20 +278,22 @@
         
       
     </dl>
-    
-  
-  
-  </div>
-  <div class="links">
-  </div>
-  
-  <div class="backlinks">
-    <hr>
-    
-    
+
+          
+        
+      </dl>
     
   </div>
-  
+  <div class="subordinates">
+    
+      <hr/>
+      <dl>
+        
+          
+        
+      </dl>
+    
+  </div>
 
   <div class="sources">
     
@@ -293,7 +304,7 @@
       <hr/>
       <div class="updated">
   
-  Last updated on 02 September, 2025
+  Last updated on 04 September, 2025
   
 </div>
       <div class="attribution">

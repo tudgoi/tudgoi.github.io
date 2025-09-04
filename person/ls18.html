@@ -21,6 +21,9 @@
       dd::before {
           content: '';
       }
+      dd {
+        padding-left: 1em;
+      }
     </style>
     <header>
         <b><a href="https:&#x2F;&#x2F;tudgoi.github.io&#x2F;">The Unofficial Directory — Government of India</a></b>
@@ -40,16 +43,16 @@
     grid-area: title;
   }
 
+  div.offices {
+    grid-area: offices;
+  }
+
   div.contacts {
     grid-area: contacts;
   }
 
-  div.links {
-    grid-area: links;
-  }
-
-  div.backlinks {
-    grid-area: backlinks;
+  div.subordinates {
+    grid-area: subordinates;
   }
 
   div.sources {
@@ -64,9 +67,9 @@
       "maintenance"
       "title"
       "photo"
+      "offices"
       "contacts"
-      "links"
-      "backlinks"
+      "subordinates"
       "sources";
     margin-bottom: 1em;
   }
@@ -77,9 +80,9 @@
       grid-template-areas:
         "maintenance maintenance"
         "photo title"
+        "photo offices"
         "photo contacts"
-        "photo links"
-        "backlinks backlinks"
+        "subordinates subordinates"
         "sources sources";
     }
   }
@@ -141,8 +144,6 @@
     
       
     
-        
-        
     
     <style>
     </style>
@@ -161,7 +162,11 @@
   </div>
   <div class="title">
     <h2>18th Lok Sabha</h2>
+    <hr/>
+  </div>
+  <div class="contacts">
     
+    <hr/>
     <dl class="contact-list">
       
         
@@ -193,13 +198,15 @@
       
     </dl>
     
-    <hr/>
   </div>
-  <div class="contacts">
-  
-  
-    <h5>Lok Sabha</h5>
+  <div class="offices">
     
+      <dl class="office-list">
+        
+          <dt>Lok Sabha</dt>
+          <dd>
+          
+            
     <dl class="contact-list">
       
         
@@ -241,28 +248,31 @@
         
       
     </dl>
-    
-    
-  
-  
-  </div>
-  <div class="links">
-  </div>
-  
-  <div class="backlinks">
-    <hr>
-    
-    
-    <h5>Lok Sabha</h5>
-    <dl class="backlink-list">
-      
+
+          
+          
         
+      </dl>
+    
+  </div>
+  <div class="subordinates">
+    
+      <hr/>
+      <dl>
         
-          <dt>Members (1)</dt>
-          <dd>
-            <ul>
+          
+            <dt>Lok Sabha</dt>
+            <dd>
               
-                <li>
+  <dl class="backlink-list">
+    
+      
+      
+        <dt>Members (1)</dt>
+        <dd>
+          <ul>
+            
+              <li>
     
         
         <a href="
@@ -271,18 +281,18 @@
     
     Member of Parliament, Lok Sabha, Sriperumbudur
 </li>
-              
-            </ul>
-          </dd>
-        
+            
+          </ul>
+        </dd>
       
-        
-        
-          <dt>Under their responsibility (1)</dt>
-          <dd>
-            <ul>
-              
-                <li>
+    
+      
+      
+        <dt>Under their responsibility (1)</dt>
+        <dd>
+          <ul>
+            
+              <li>
     
         
         <a href="
@@ -291,16 +301,19 @@
     
     Union Council of Ministers
 </li>
-              
-            </ul>
-          </dd>
-        
+            
+          </ul>
+        </dd>
       
-    </dl>
     
+  </dl>
+
+            </dd>
+          
+        
+      </dl>
     
   </div>
-  
 
   <div class="sources">
     
