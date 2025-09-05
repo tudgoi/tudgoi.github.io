@@ -56,15 +56,10 @@ the <a href="https://github.com/arunkd13/directory-gov-in">project source code</
 
   <div class="metric">
 	  Tracking <b>32</b> persons across <b>34</b> offices.
-    <p>
-    Start with <a href="person/droupadm.html">Droupadi Murmu</a>, President of India
-    </p>
   </div>
-
   <div class="search">
     <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Enter your search query..." />
-        <button onclick="performSearch()">Search</button>
+        <input type="text" id="searchInput" placeholder="e.g. 'president'" />
     </div>
     <div id="status" class="status">Loading search engine...</div>
     <div id="results" class="results"></div>
@@ -78,7 +73,7 @@ the <a href="https://github.com/arunkd13/directory-gov-in">project source code</
       
       async function initializeSearch() {
           try {
-              const response = await fetch('./tinysearch_engine.wasm');
+              const response = await fetch('./tinysearch_engine.wasm?v=bad5bb16');
               if (!response.ok) {
                   throw new Error(`Failed to fetch WASM: ${response.status} ${response.statusText}`);
               }
@@ -135,8 +130,7 @@ the <a href="https://github.com/arunkd13/directory-gov-in">project source code</
           return new TextDecoder().decode(bytes);
       }
       
-      function performSearch() {
-          const query = document.getElementById('searchInput').value.trim();
+      function performSearch(query) {
           const resultsDiv = document.getElementById('results');
           const statusDiv = document.getElementById('status');
           
@@ -167,7 +161,7 @@ the <a href="https://github.com/arunkd13/directory-gov-in">project source code</
               }
               
               // Call search function
-              const resultPtr = searchFunction(queryPtr, 10);
+              const resultPtr = searchFunction(queryPtr, 100);
               
               // Free query memory if we allocated it
               if (wasmModule.exports.__wbindgen_free && queryPtr > 1024) {
@@ -203,7 +197,7 @@ the <a href="https://github.com/arunkd13/directory-gov-in">project source code</
               } else {
                   const resultHTML = results.map(result => `
                       <div class="result-item">
-                          <a href="${result.url}" class="result-title" target="_blank">${result.title}</a>
+                          <a href="${result.url}" class="result-title">${result.title}</a>
                       </div>
                   `).join('');
                   
@@ -217,14 +211,20 @@ the <a href="https://github.com/arunkd13/directory-gov-in">project source code</
               statusDiv.innerHTML = `<div class="error">Search failed: ${error.message}</div>`;
           }
       }
-        
         // Enter key support
         document.getElementById('searchInput').addEventListener('keypress', function(event) {
             if (event.key === 'Enter') {
-                performSearch();
+                const query = document.getElementById('searchInput').value.trim();
+                performSearch(query);
             }
+        })
+
+        // Instant search support
+        document.getElementById('searchInput').addEventListener('input', function(event) {
+            const query = event.target.value.trim();
+            performSearch(query);
         });
-        
+      
         // Initialize search engine
         document.getElementById('searchInput').disabled = true;
         initializeSearch();
