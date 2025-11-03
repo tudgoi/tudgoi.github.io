@@ -42,19 +42,15 @@
   }
 
   div.offices {
-    grid-area: offices;
+    grid-area: incumbent;
   }
 
   div.contacts {
     grid-area: contacts;
   }
 
-  div.past-tenures {
-    grid-area: past-tenures;
-  }
-
-  div.subordinates {
-    grid-area: subordinates;
+  div.quondams {
+    grid-area: quondams;
   }
 
   div.sources {
@@ -66,12 +62,11 @@
     column-gap: 1em;
     row-gap: 0.5em;
     grid-template-areas:
+      "maintenance"
       "title"
       "photo"
-      "offices"
       "contacts"
-      "subordinates"
-      "past-tenures"
+      "quondams"
       "sources";
     margin-bottom: 1em;
   }
@@ -80,11 +75,10 @@
       grid-template-columns: 1fr 3fr;
       grid-template-rows: min-content min-content min-content 1fr auto auto;
       grid-template-areas:
+        "maintenance maintenance"
         "photo title"
-        "photo offices"
         "photo contacts"
-        "subordinates subordinates"
-        "past-tenures past-tenures"
+        "quondams quondams"
         "sources sources";
     }
   }
@@ -94,17 +88,20 @@
       column-gap: 0.5em;
   }
   
-  .photo {
+  .photo figure div.photo-bg {
+      background-color: lightgray;
+      padding: 0.75em;
+      display: inline-block;
+  }
+  .photo figure {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .photo figure img {
+  .photo figure div.photo-bg img {
       width: 12em;
       margin: 0em;
-      border: 10px solid lightgray;
   }
   .photo figure figcaption {
-    width: 20em;
     padding-inline: 1em;
     font-size: x-small;
     white-space: nowrap;
@@ -114,119 +111,62 @@
   dl.contact-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
   }
-  dl.office-list dt {
-    margin-bottom: 0.3em;
+  dl.contact-list .dl-single-line dt svg {
+      width: 1.3em;
+      height: 1.3em;
+      vertical-align: -0.125em;
   }
-  .icon svg {
-      width: 1.2em;
-      height: 1.2em;
-      vertical-align: -0.3em;
-      margin-left: 0.25em;
-      margin-right: 0.25em;
-  }
-@media (prefers-color-scheme: dark) {
-  .icon svg path {
-    fill: white;
-  }
-}
 </style>
 <main>
+  <div class="maintenance">
+    
+    
+    <blockquote>
+      <dl class="dl-single-line">
+        <dt>🚧</dt>
+        <dd>
+          <p>
+            
+                This page is incomplete.
+            
+          </p>
+          <p>
+            Please consider sending a <a href="https://en.wikipedia.org/wiki/Fork_and_pull_model">PR</a> at
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;tudgoi&#x2F;workspace">github.com&#x2F;tudgoi&#x2F;workspace</a>
+          </p>
+        </dd>
+      </dl>
+    </blockquote>
+    
+  </div>
   <div class="photo">
     
       
     
     
     <figure>
-            <img src="https:&#x2F;&#x2F;chennaicorporation.gov.in&#x2F;gcc&#x2F;council&#x2F;council-address&#x2F;photo&#x2F;ward069.jpg" alt="R. Saritha" />
+            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;65&#x2F;No-Image-Placeholder.svg" alt="Secretary to Government, Environment, Climate Change and Forests Department, Tamil Nadu" />
         
     </figure>
 
     
   </div>
   <div class="title">
-    <h2>
-      R. Saritha
-      
+    <h2>Secretary to Government, Environment, Climate Change and Forests Department, Tamil Nadu</h2>
     
-
-    </h2>
+      <a href="../person/supriyas.html">Supriya Sahu</a>
+    
     <hr/>
   </div>
-  <div class="offices">
-    
-      <dl class="office-list">
-        
-          <dt>
-            <a href="../office/gccc-ward-69.html">Greater Chennai Corporation Councillor Ward 69</a>
-            
-    
-        
-            
-            
-        
-    
-
-          </dt>
-          <dd>
-          
-            
-    <dl class="contact-list">
-      
-        
-            
-            
-                <div class="dl-single-line">
-                  <dt><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg></span></dt>
-                  <dd>
-    
-        <a href="mailto:ward069@chennaicorporation.gov.in">ward069@chennaicorporation.gov.in</a>
-    
-</dd>
-                </div>
-            
-        
-      
-    </dl>
-
-          
-          
-            
-    <dl>
-      
-        
-          
-          <div class="dl-single-line">
-              <dt>Member of </dt>
-              <dd>
-    
-    <a href="../office/gccc.html">Greater Chennai Corporation Council</a>
-</dd>
-          </div>
-        
-      
-    </dl>
-
-          
-        
-      </dl>
     
   </div>
   <div class="contacts">
     
   </div>
-  <div class="subordinates">
-    
-      <hr/>
-      <dl>
-        
-          
-        
-      </dl>
-    
-  </div>
 
-  <div class="past-tenures">
+  <div class="quondams">
     
   </div>
   <div class="sources">
