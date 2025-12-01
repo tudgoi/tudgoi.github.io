@@ -30,9 +30,10 @@
     </header>
     
 <style>
-  div.maintenance {
-    grid-area: maintenance;
+  div.toolbar {
+    grid-area: toolbar;
   }
+
   div.photo {
     grid-area: photo;
   }
@@ -66,6 +67,7 @@
     column-gap: 1em;
     row-gap: 0.5em;
     grid-template-areas:
+      "toolbar"
       "title"
       "photo"
       "offices"
@@ -75,11 +77,13 @@
       "sources";
     margin-bottom: 1em;
   }
+
   @media (min-width: 40em) {
     main {
       grid-template-columns: 1fr 3fr;
       grid-template-rows: min-content min-content min-content 1fr auto auto;
       grid-template-areas:
+        "toolbar toolbar"
         "photo title"
         "photo offices"
         "photo contacts"
@@ -88,21 +92,24 @@
         "sources sources";
     }
   }
+
   .dl-single-line {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      column-gap: 0.5em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.5em;
   }
-  
+
   .photo {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .photo figure img {
-      width: 12em;
-      margin: 0em;
-      border: 10px solid lightgray;
+    width: 12em;
+    margin: 0em;
+    border: 10px solid lightgray;
   }
+
   .photo figure figcaption {
     width: 20em;
     padding-inline: 1em;
@@ -111,34 +118,52 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
   dl.contact-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   dl.office-list dt {
     margin-bottom: 0.3em;
   }
-  .icon svg {
-      width: 1.2em;
-      height: 1.2em;
-      vertical-align: -0.3em;
-      margin-left: 0.25em;
-      margin-right: 0.25em;
+
+  span.ext-links {
+    margin-left: 1em;
   }
-@media (prefers-color-scheme: dark) {
-  .icon svg path {
+
+  .icon svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+  }
+
+  button .icon svg path {
     fill: white;
   }
-}
+
+  @media (prefers-color-scheme: dark) {
+    .icon svg path {
+      fill: white;
+    }
+  }
+
+  div.toolbar {
+    text-align: right;
+    font-size: small
+  }
 </style>
 <main>
+  <div class="toolbar">
+    
+  </div>
   <div class="photo">
     
-      
+    
     
     
     <figure>
-            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;9&#x2F;98&#x2F;R_Rajendran.png" alt="R. Rajendran" />
+            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;9&#x2F;98&#x2F;R_Rajendran.png&#x2F;320px-R_Rajendran.png" alt="R. Rajendran" />
         
     </figure>
 
@@ -148,38 +173,42 @@
     <h2>
       R. Rajendran
       
+    <span class="ext-links">
     
         
             
             
                 <a href="
     https://en.wikipedia.org/wiki/R._Rajendran
-"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M640 115.2L639.7 127.4C611.6 128.2 594.7 143.2 583.9 167.7C558.9 225.5 480.6 407.7 428.6 526.3L415 526.3L333.1 333.2C300.6 396.8 264.8 463.2 233.9 526.3C233.6 526.6 218.9 526.3 218.9 526C172 416.3 122.8 307.4 75.8 197.4C64.4 170.7 26.4 127.4 .2 127.7C.2 124.6-.1 117.7-.1 113.5L161.8 113.5L161.8 127.4C142.6 128.5 109 140.7 118.5 161.6C140.4 211.3 222.1 401.9 244.1 450.2C259.1 420.5 301.9 341 319.4 307.4C305.5 279.1 260.8 173.5 246.6 147.4C236.9 129.6 210.5 128 190.8 127.7L190.8 113.8L333.3 114.1L333.3 127.2C313.9 127.8 295.2 135 303.9 153.3C322.8 193.3 334.5 221.4 352 258C357.6 247.2 386.7 188.6 400.1 157.2C409 136.6 396.2 128.6 361.5 127.8C361.8 124.2 361.5 117.5 361.8 114.2C406.2 113.9 472.9 113.9 484.9 113.6L484.9 127.2C462.4 128 439.1 140 426.8 158.9L367.6 281.7C374 297.8 430.9 424.5 436.8 438.4L559.2 155.8C550.6 132.7 522.8 127.7 512 127.5L512 113.6L639.8 114.7L640 115.2z"/></svg></span></a>
+"><button><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M640 115.2L639.7 127.4C611.6 128.2 594.7 143.2 583.9 167.7C558.9 225.5 480.6 407.7 428.6 526.3L415 526.3L333.1 333.2C300.6 396.8 264.8 463.2 233.9 526.3C233.6 526.6 218.9 526.3 218.9 526C172 416.3 122.8 307.4 75.8 197.4C64.4 170.7 26.4 127.4 .2 127.7C.2 124.6-.1 117.7-.1 113.5L161.8 113.5L161.8 127.4C142.6 128.5 109 140.7 118.5 161.6C140.4 211.3 222.1 401.9 244.1 450.2C259.1 420.5 301.9 341 319.4 307.4C305.5 279.1 260.8 173.5 246.6 147.4C236.9 129.6 210.5 128 190.8 127.7L190.8 113.8L333.3 114.1L333.3 127.2C313.9 127.8 295.2 135 303.9 153.3C322.8 193.3 334.5 221.4 352 258C357.6 247.2 386.7 188.6 400.1 157.2C409 136.6 396.2 128.6 361.5 127.8C361.8 124.2 361.5 117.5 361.8 114.2C406.2 113.9 472.9 113.9 484.9 113.6L484.9 127.2C462.4 128 439.1 140 426.8 158.9L367.6 281.7C374 297.8 430.9 424.5 436.8 438.4L559.2 155.8C550.6 132.7 522.8 127.7 512 127.5L512 113.6L639.8 114.7L640 115.2z"/></svg></span></button></a>
             
         
     
+    </span>
 
     </h2>
-    <hr/>
+    <hr />
   </div>
   <div class="offices">
     
-      <dl class="office-list">
+    <dl class="office-list">
+      
+      <dt>
+        <a href="../office/tnmft.html">Minister for Tourism</a>
         
-          <dt>
-            <a href="../office/tnmft.html">Minister for Tourism</a>
-            
+    <span class="ext-links">
     
         
             
             
         
     
+    </span>
 
-          </dt>
-          <dd>
-          
-            
+      </dt>
+      <dd>
+        
+        
     <dl class="contact-list">
       
         
@@ -198,9 +227,9 @@
       
     </dl>
 
-          
-          
-            
+        
+        
+        
     <dl>
       
         
@@ -217,15 +246,15 @@
       
     </dl>
 
-          
         
-      </dl>
+        
+    </dl>
     
   </div>
   <div class="contacts">
     
-      <hr/>
-      
+    <hr />
+    
     <dl class="contact-list">
       
         
@@ -239,12 +268,12 @@
   </div>
   <div class="subordinates">
     
-      <hr/>
-      <dl>
-        
-          
-        
-      </dl>
+    <hr />
+    <dl>
+      
+      
+      
+    </dl>
     
   </div>
 
@@ -260,9 +289,9 @@
       <hr/>
       <div class="updated">
         
-  
-  Local version
-  
+
+Local version
+
 .
       </div>
       <div class="attribution">

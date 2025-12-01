@@ -30,9 +30,10 @@
     </header>
     
 <style>
-  div.maintenance {
-    grid-area: maintenance;
+  div.toolbar {
+    grid-area: toolbar;
   }
+
   div.photo {
     grid-area: photo;
   }
@@ -66,6 +67,7 @@
     column-gap: 1em;
     row-gap: 0.5em;
     grid-template-areas:
+      "toolbar"
       "title"
       "photo"
       "offices"
@@ -75,11 +77,13 @@
       "sources";
     margin-bottom: 1em;
   }
+
   @media (min-width: 40em) {
     main {
       grid-template-columns: 1fr 3fr;
       grid-template-rows: min-content min-content min-content 1fr auto auto;
       grid-template-areas:
+        "toolbar toolbar"
         "photo title"
         "photo offices"
         "photo contacts"
@@ -88,21 +92,24 @@
         "sources sources";
     }
   }
+
   .dl-single-line {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      column-gap: 0.5em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.5em;
   }
-  
+
   .photo {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .photo figure img {
-      width: 12em;
-      margin: 0em;
-      border: 10px solid lightgray;
+    width: 12em;
+    margin: 0em;
+    border: 10px solid lightgray;
   }
+
   .photo figure figcaption {
     width: 20em;
     padding-inline: 1em;
@@ -111,30 +118,48 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
   dl.contact-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   dl.office-list dt {
     margin-bottom: 0.3em;
   }
-  .icon svg {
-      width: 1.2em;
-      height: 1.2em;
-      vertical-align: -0.3em;
-      margin-left: 0.25em;
-      margin-right: 0.25em;
+
+  span.ext-links {
+    margin-left: 1em;
   }
-@media (prefers-color-scheme: dark) {
-  .icon svg path {
+
+  .icon svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+  }
+
+  button .icon svg path {
     fill: white;
   }
-}
+
+  @media (prefers-color-scheme: dark) {
+    .icon svg path {
+      fill: white;
+    }
+  }
+
+  div.toolbar {
+    text-align: right;
+    font-size: small
+  }
 </style>
 <main>
+  <div class="toolbar">
+    
+  </div>
   <div class="photo">
     
-      
+    
     
     
     <figure>
@@ -148,29 +173,33 @@
     <h2>
       R. Jaisankar
       
+    <span class="ext-links">
     
+    </span>
 
     </h2>
-    <hr/>
+    <hr />
   </div>
   <div class="offices">
     
-      <dl class="office-list">
+    <dl class="office-list">
+      
+      <dt>
+        <a href="../office/gccc-ward-17.html">Greater Chennai Corporation Councillor Ward 17</a>
         
-          <dt>
-            <a href="../office/gccc-ward-17.html">Greater Chennai Corporation Councillor Ward 17</a>
-            
+    <span class="ext-links">
     
         
             
             
         
     
+    </span>
 
-          </dt>
-          <dd>
-          
-            
+      </dt>
+      <dd>
+        
+        
     <dl class="contact-list">
       
         
@@ -189,9 +218,9 @@
       
     </dl>
 
-          
-          
-            
+        
+        
+        
     <dl>
       
         
@@ -207,9 +236,9 @@
       
     </dl>
 
-          
         
-      </dl>
+        
+    </dl>
     
   </div>
   <div class="contacts">
@@ -217,12 +246,12 @@
   </div>
   <div class="subordinates">
     
-      <hr/>
-      <dl>
-        
-          
-        
-      </dl>
+    <hr />
+    <dl>
+      
+      
+      
+    </dl>
     
   </div>
 
@@ -238,9 +267,9 @@
       <hr/>
       <div class="updated">
         
-  
-  Local version
-  
+
+Local version
+
 .
       </div>
       <div class="attribution">
