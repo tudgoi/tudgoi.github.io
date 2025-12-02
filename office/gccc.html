@@ -30,6 +30,9 @@
     </header>
     
 <style>
+  div.toolbar {
+    grid-area: toolbar;
+  }
   div.photo {
     grid-area: photo;
   }
@@ -59,6 +62,7 @@
     column-gap: 1em;
     row-gap: 0.5em;
     grid-template-areas:
+      "toolbar"
       "title"
       "photo"
       "contacts"
@@ -71,6 +75,7 @@
       grid-template-columns: 1fr 3fr;
       grid-template-rows: min-content min-content min-content 1fr auto auto;
       grid-template-areas:
+        "toolbar toolbar"
         "photo title"
         "photo contacts"
         "quondams quondams"
@@ -113,15 +118,31 @@
       height: 1.3em;
       vertical-align: -0.125em;
   }
+  div.toolbar {
+    text-align: right;
+    font-size: small
+  }
 </style>
 <main>
+  <div class="toolbar">
+    
+  </div>
   <div class="photo">
     
       
     
+        
+        
+        
+        
+    
     
     <figure>
-            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;65&#x2F;No-Image-Placeholder.svg" alt="Greater Chennai Corporation Council" />
+            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;a&#x2F;a8&#x2F;Chennai_Corporation_Emblem.png&#x2F;320px-Chennai_Corporation_Emblem.png" alt="Greater Chennai Corporation Council" />
+        
+            <figcaption title="Greater Chennai Corporation, Public domain, via Wikimedia Commons">
+                Image by Greater Chennai Corporation, Public domain, via Wikimedia Commons
+            </figcaption>
         
     </figure>
 
