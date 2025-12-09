@@ -6,27 +6,20 @@
     <title>The Unofficial Directory — Government of India</title>
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <link rel="stylesheet" href="./static/style.css">
+    
+    
   </head>
   <body>
-    <style>
-      body {
-        max-width: 900px;
-      }
-      footer .attribution {
-        text-align: center;
-      }
-      footer .updated {
-        font-size: small;
-      }
-      dd::before {
-          content: '';
-      }
-      dd {
-        padding-left: 1em;
-      }
-    </style>
     <header>
-        <b><a href="https:&#x2F;&#x2F;tudgoi.github.io&#x2F;">The Unofficial Directory — Government of India</a></b>
+      <div class="logo">
+        <b><a href="https://tudgoi.github.io/">The Unofficial Directory — Government of India</a></b>
+      </div>
+      <div class="toolbar">
+        
+        
+        
+      </div>
     </header>
     
 
@@ -37,24 +30,9 @@ We are just starting out and this site will likely be under development for a lo
 before it becomes practically usable. If you are interested in joining, checkout
 the <a href="https://github.com/tudgoi/workspace">project source code</a>.
 
-<style>
-    div.metric {
-	    text-align: center;
-    }
-    div.search {
-        margin: 2em;
-        display: grid;
-        place-items: center;
-    }
-    div.field label {
-        font-weight: bold;
-        margin-right: 1em;
-    }
-</style>
-
   <hr/>
 
-  <div class="metric">
+  <div class="site-metric">
 	  Tracking <b>368</b> persons across <b>371</b> offices.
   </div>
   <div class="search">
@@ -137,7 +115,7 @@ the <a href="https://github.com/tudgoi/workspace">project source code</a>.
                 statusDiv.textContent = `No results found for "${query}" (${searchTime}ms)`;
             } else {
                 const resultHTML = results.map(result => {
-                    const url = `.&#x2F;${result.type}/${result.id}.html`;
+                    const url = `./${result.type}/${result.id}.html`;
                     return `
                         <div class="result-item">
                             <a href="${url}" class="result-title">${result.name}</a>

@@ -6,57 +6,22 @@
     <title>The Unofficial Directory — Government of India</title>
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <link rel="stylesheet" href="..&#x2F;static/style.css">
   </head>
   <body>
-    <style>
-      body {
-        max-width: 900px;
-      }
-      footer .attribution {
-        text-align: center;
-      }
-      footer .updated {
-        font-size: small;
-      }
-      dd::before {
-          content: '';
-      }
-      dd {
-        padding-left: 1em;
-      }
-    </style>
     <header>
+      <div class="logo">
         <b><a href="https:&#x2F;&#x2F;tudgoi.github.io&#x2F;">The Unofficial Directory — Government of India</a></b>
+      </div>
+      <div class="toolbar">
+        
+        <a href="/new/person">New Person</a>
+        <a href="/new/office">New Office</a>
+        
+      </div>
     </header>
     
 <style>
-  div.toolbar {
-    grid-area: toolbar;
-  }
-  div.photo {
-    grid-area: photo;
-  }
-
-  div.title {
-    grid-area: title;
-  }
-
-  div.offices {
-    grid-area: incumbent;
-  }
-
-  div.contacts {
-    grid-area: contacts;
-  }
-
-  div.quondams {
-    grid-area: quondams;
-  }
-
-  div.sources {
-    grid-area: sources;
-  }
-
   main {
     display: grid;
     column-gap: 1em;
@@ -73,7 +38,7 @@
   @media (min-width: 40em) {
     main {
       grid-template-columns: 1fr 3fr;
-      grid-template-rows: min-content min-content min-content 1fr auto auto;
+      grid-template-rows: min-content min-content 1fr 1fr auto auto;
       grid-template-areas:
         "toolbar toolbar"
         "photo title"
@@ -81,46 +46,6 @@
         "quondams quondams"
         "sources sources";
     }
-  }
-  .dl-single-line {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      column-gap: 0.5em;
-  }
-  
-  .photo figure div.photo-bg {
-      background-color: lightgray;
-      padding: 0.75em;
-      display: inline-block;
-  }
-  .photo figure {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .photo figure div.photo-bg img {
-      width: 12em;
-      margin: 0em;
-  }
-  .photo figure figcaption {
-    padding-inline: 1em;
-    font-size: x-small;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  dl.contact-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0.5em;
-  }
-  dl.contact-list .dl-single-line dt svg {
-      width: 1.3em;
-      height: 1.3em;
-      vertical-align: -0.125em;
-  }
-  div.toolbar {
-    text-align: right;
-    font-size: small
   }
 </style>
 <main>
@@ -132,13 +57,10 @@
       
     
         
-        
-        
-        
     
     
     <figure>
-            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;thumb&#x2F;5&#x2F;55&#x2F;Emblem_of_India.svg&#x2F;200px-Emblem_of_India.svg.png&#x2F;320px-&#x2F;5&#x2F;55&#x2F;Emblem_of_India.svg&#x2F;200px-Emblem_of_India.svg.png" alt="Union Council of Ministers" />
+            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;5&#x2F;55&#x2F;Emblem_of_India.svg&#x2F;200px-Emblem_of_India.svg.png" alt="Union Council of Ministers" />
         
             <figcaption title="Government of India, Public domain, via Wikimedia Commons">
                 Image by Government of India, Public domain, via Wikimedia Commons
