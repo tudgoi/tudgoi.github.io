@@ -6,82 +6,89 @@
     <title>The Unofficial Directory — Government of India</title>
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-    <link rel="stylesheet" href="..&#x2F;static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
+    
+    
   </head>
   <body>
     <header>
       <div class="logo">
-        <b><a href="https:&#x2F;&#x2F;tudgoi.github.io&#x2F;">The Unofficial Directory — Government of India</a></b>
+        <b><a href="https://tudgoi.github.io/">The Unofficial Directory — Government of India</a></b>
       </div>
       <div class="toolbar">
         
-  
 
-        <a href="/new/person">New Person</a>
-        <a href="/new/office">New Office</a>
+
+        
         
 
-  <a href="comwb-banerjee3/edit">Edit</a>
+
 
       </div>
     </header>
     
-<style>
-  main {
-    display: grid;
-    column-gap: 1em;
-    row-gap: 0.5em;
-    grid-template-areas:
-      "toolbar"
-      "title"
-      "photo"
-      "offices"
-      "contacts"
-      "subordinates"
-      "past-tenures"
-      "sources";
-    margin-bottom: 1em;
-  }
-
-  @media (min-width: 40em) {
-    main {
-      grid-template-columns: 1fr 3fr;
-      grid-template-rows: min-content min-content min-content 1fr auto auto;
-      grid-template-areas:
-        "toolbar toolbar"
-        "photo title"
-        "photo offices"
-        "photo contacts"
-        "subordinates subordinates"
-        "past-tenures past-tenures"
-        "sources sources";
-    }
-  }
-</style>
 <main>
-  <div class="photo">
-    
-    
-    
-        
-    
-    
-    <figure>
-            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;65&#x2F;No-Image-Placeholder.svg" alt="Third Banerjee ministry" />
-        
-    </figure>
+    <style>
+        .content-top {
+            display: grid;
+            column-gap: 1em;
+            row-gap: 0.5em;
+            grid-template-areas:
+                "content-title"
+                "content-left"
+                "content-right";
+            margin-bottom: 1em;
+        }
 
-    
-  </div>
-  <div class="title">
+        @media (min-width: 40em) {
+            .content-top {
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: min-content 1fr;
+                grid-template-areas:
+                    "content-left content-title"
+                    "content-left content-right"
+            }
+        }
+
+        div.toolbar {
+            grid-area: toolbar;
+        }
+
+        div.content-title {
+            grid-area: content-title;
+        }
+
+        div.content-left {
+            grid-area: content-left;
+        }
+
+        div.content-right {
+            grid-area: content-right;
+        }
+    </style>
+    <div class="content-top">
+        <div class="content-title">
+            
     <h2>
       Third Banerjee ministry
       
-
-
     </h2>
     <hr />
+
+        </div>
+        <div class="content-left">
+            
+  <div class="photo">
+    
+      
+        
+      
+    
   </div>
+
+        </div>
+        <div class="content-right">
+            
   <div class="offices">
     
     <dl class="office-list">
@@ -89,8 +96,6 @@
       <dt>
         <a href="../office/comwb.html">West Bengal Council of Ministers</a>
         
-
-
       </dt>
       <dd>
         
@@ -98,17 +103,16 @@
         
     <dl>
       
-        
-          
           <div class="dl-single-line">
-              <dt>Head </dt>
+              <dt>
+                Head
+              </dt>
               <dd>
     <a href="../person/mamatab.html">Mamata Banerjee</a>,
     
     <a href="../office/cmowb.html">Chief Minister of West Bengal</a>
 </dd>
           </div>
-        
       
     </dl>
 
@@ -120,6 +124,10 @@
   <div class="contacts">
     
   </div>
+
+        </div>
+    </div>
+    
   <div class="subordinates">
     
     <hr />
@@ -131,9 +139,9 @@
         
   <dl class="backlink-list">
     
-      
-      
-        <dt>Advises (1)</dt>
+      <dt>
+        Adviser
+        (1)</dt>
         <dd>
           <ul>
             
@@ -145,7 +153,6 @@
             
           </ul>
         </dd>
-      
     
   </dl>
 
@@ -159,9 +166,11 @@
   <div class="past-tenures">
     
   </div>
-  <div class="sources">
-    
-  </div>
+
+
+    <div class="sources">
+        
+    </div>
 </main>
 
     <footer>
@@ -169,9 +178,9 @@
       <div class="updated">
         
 
-Local version
+Last updated on 2025-09-13
 
-.
+
       </div>
       <div class="attribution">
         Made with <span aria-label="Love" style="color: #f43f5e">&hearts;</span>

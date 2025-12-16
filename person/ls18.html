@@ -6,68 +6,103 @@
     <title>The Unofficial Directory — Government of India</title>
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-    <link rel="stylesheet" href="..&#x2F;static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
+    
+    
   </head>
   <body>
     <header>
       <div class="logo">
-        <b><a href="https:&#x2F;&#x2F;tudgoi.github.io&#x2F;">The Unofficial Directory — Government of India</a></b>
+        <b><a href="https://tudgoi.github.io/">The Unofficial Directory — Government of India</a></b>
       </div>
       <div class="toolbar">
         
-  
 
-        <a href="/new/person">New Person</a>
-        <a href="/new/office">New Office</a>
+
+        
         
 
-  <a href="ls18/edit">Edit</a>
+
 
       </div>
     </header>
     
-<style>
-  main {
-    display: grid;
-    column-gap: 1em;
-    row-gap: 0.5em;
-    grid-template-areas:
-      "toolbar"
-      "title"
-      "photo"
-      "offices"
-      "contacts"
-      "subordinates"
-      "past-tenures"
-      "sources";
-    margin-bottom: 1em;
-  }
-
-  @media (min-width: 40em) {
-    main {
-      grid-template-columns: 1fr 3fr;
-      grid-template-rows: min-content min-content min-content 1fr auto auto;
-      grid-template-areas:
-        "toolbar toolbar"
-        "photo title"
-        "photo offices"
-        "photo contacts"
-        "subordinates subordinates"
-        "past-tenures past-tenures"
-        "sources sources";
-    }
-  }
-</style>
 <main>
+    <style>
+        .content-top {
+            display: grid;
+            column-gap: 1em;
+            row-gap: 0.5em;
+            grid-template-areas:
+                "content-title"
+                "content-left"
+                "content-right";
+            margin-bottom: 1em;
+        }
+
+        @media (min-width: 40em) {
+            .content-top {
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: min-content 1fr;
+                grid-template-areas:
+                    "content-left content-title"
+                    "content-left content-right"
+            }
+        }
+
+        div.toolbar {
+            grid-area: toolbar;
+        }
+
+        div.content-title {
+            grid-area: content-title;
+        }
+
+        div.content-left {
+            grid-area: content-left;
+        }
+
+        div.content-right {
+            grid-area: content-right;
+        }
+    </style>
+    <div class="content-top">
+        <div class="content-title">
+            
+    <h2>
+      18th Lok Sabha
+      
+      
+    <span class="ext-links">
+    
+      
+            <a href="https://en.wikipedia.org/wiki/18th_Lok_Sabha"><button><span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M640 115.2L639.7 127.4C611.6 128.2 594.7 143.2 583.9 167.7C558.9 225.5 480.6 407.7 428.6 526.3L415 526.3L333.1 333.2C300.6 396.8 264.8 463.2 233.9 526.3C233.6 526.6 218.9 526.3 218.9 526C172 416.3 122.8 307.4 75.8 197.4C64.4 170.7 26.4 127.4 .2 127.7C.2 124.6-.1 117.7-.1 113.5L161.8 113.5L161.8 127.4C142.6 128.5 109 140.7 118.5 161.6C140.4 211.3 222.1 401.9 244.1 450.2C259.1 420.5 301.9 341 319.4 307.4C305.5 279.1 260.8 173.5 246.6 147.4C236.9 129.6 210.5 128 190.8 127.7L190.8 113.8L333.3 114.1L333.3 127.2C313.9 127.8 295.2 135 303.9 153.3C322.8 193.3 334.5 221.4 352 258C357.6 247.2 386.7 188.6 400.1 157.2C409 136.6 396.2 128.6 361.5 127.8C361.8 124.2 361.5 117.5 361.8 114.2C406.2 113.9 472.9 113.9 484.9 113.6L484.9 127.2C462.4 128 439.1 140 426.8 158.9L367.6 281.7C374 297.8 430.9 424.5 436.8 438.4L559.2 155.8C550.6 132.7 522.8 127.7 512 127.5L512 113.6L639.8 114.7L640 115.2z"/></svg>
+            </span></button></a>
+      
+    
+      
+            <a href="https://www.wikidata.org/wiki/Q123052644"><button><span class="icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 4.583v14.833h.865V4.583zm1.788 0v14.833h2.653V4.583zm3.518 0v14.832H7.96V4.583zm3.547 0v14.834h.866V4.583zm1.789 0v14.833h.865V4.583zm1.759 0v14.834h2.653V4.583zm3.518 0v14.834h.923V4.583zm1.788 0v14.833h2.653V4.583zm3.64 0v14.834h.865V4.583zm1.788 0v14.834H24V4.583Z"/></svg>
+            </span></button></a>
+      
+    
+    </span>
+
+      
+    </h2>
+    <hr />
+
+        </div>
+        <div class="content-left">
+            
   <div class="photo">
     
-    
-    
+      
         
-    
-    
+          
     <figure>
-            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;b&#x2F;b9&#x2F;Lok_Sabha.svg" alt="18th Lok Sabha" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Lok_Sabha.svg" alt="18th Lok Sabha" />
         
             <figcaption title="Swapnil1101, Public domain, via Wikimedia Commons">
                 Image by Swapnil1101, Public domain, via Wikimedia Commons
@@ -75,39 +110,14 @@
         
     </figure>
 
-    
-  </div>
-  <div class="title">
-    <h2>
-      18th Lok Sabha
+        
       
-
-    <span class="ext-links">
     
-        
-            
-            
-                <a href="
-    https://www.wikidata.org/wiki/Q123052644
-"><button><span class="icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 4.583v14.833h.865V4.583zm1.788 0v14.833h2.653V4.583zm3.518 0v14.832H7.96V4.583zm3.547 0v14.834h.866V4.583zm1.789 0v14.833h.865V4.583zm1.759 0v14.834h2.653V4.583zm3.518 0v14.834h.923V4.583zm1.788 0v14.833h2.653V4.583zm3.64 0v14.834h.865V4.583zm1.788 0v14.834H24V4.583Z"/></svg></span></button></a>
-            
-        
-    
-        
-            
-            
-                <a href="
-    https://en.wikipedia.org/wiki/18th_Lok_Sabha
-"><button><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M640 115.2L639.7 127.4C611.6 128.2 594.7 143.2 583.9 167.7C558.9 225.5 480.6 407.7 428.6 526.3L415 526.3L333.1 333.2C300.6 396.8 264.8 463.2 233.9 526.3C233.6 526.6 218.9 526.3 218.9 526C172 416.3 122.8 307.4 75.8 197.4C64.4 170.7 26.4 127.4 .2 127.7C.2 124.6-.1 117.7-.1 113.5L161.8 113.5L161.8 127.4C142.6 128.5 109 140.7 118.5 161.6C140.4 211.3 222.1 401.9 244.1 450.2C259.1 420.5 301.9 341 319.4 307.4C305.5 279.1 260.8 173.5 246.6 147.4C236.9 129.6 210.5 128 190.8 127.7L190.8 113.8L333.3 114.1L333.3 127.2C313.9 127.8 295.2 135 303.9 153.3C322.8 193.3 334.5 221.4 352 258C357.6 247.2 386.7 188.6 400.1 157.2C409 136.6 396.2 128.6 361.5 127.8C361.8 124.2 361.5 117.5 361.8 114.2C406.2 113.9 472.9 113.9 484.9 113.6L484.9 127.2C462.4 128 439.1 140 426.8 158.9L367.6 281.7C374 297.8 430.9 424.5 436.8 438.4L559.2 155.8C550.6 132.7 522.8 127.7 512 127.5L512 113.6L639.8 114.7L640 115.2z"/></svg></span></button></a>
-            
-        
-    
-    </span>
-
-
-    </h2>
-    <hr />
   </div>
+
+        </div>
+        <div class="content-right">
+            
   <div class="offices">
     
     <dl class="office-list">
@@ -115,52 +125,40 @@
       <dt>
         <a href="../office/ls.html">Lok Sabha</a>
         
-
+        
     <span class="ext-links">
     
-        
-            
-            
-        
+      
     
-        
-            
-            
-                <a href="
-    https://en.wikipedia.org/wiki/Lok_Sabha
-"><button><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M640 115.2L639.7 127.4C611.6 128.2 594.7 143.2 583.9 167.7C558.9 225.5 480.6 407.7 428.6 526.3L415 526.3L333.1 333.2C300.6 396.8 264.8 463.2 233.9 526.3C233.6 526.6 218.9 526.3 218.9 526C172 416.3 122.8 307.4 75.8 197.4C64.4 170.7 26.4 127.4 .2 127.7C.2 124.6-.1 117.7-.1 113.5L161.8 113.5L161.8 127.4C142.6 128.5 109 140.7 118.5 161.6C140.4 211.3 222.1 401.9 244.1 450.2C259.1 420.5 301.9 341 319.4 307.4C305.5 279.1 260.8 173.5 246.6 147.4C236.9 129.6 210.5 128 190.8 127.7L190.8 113.8L333.3 114.1L333.3 127.2C313.9 127.8 295.2 135 303.9 153.3C322.8 193.3 334.5 221.4 352 258C357.6 247.2 386.7 188.6 400.1 157.2C409 136.6 396.2 128.6 361.5 127.8C361.8 124.2 361.5 117.5 361.8 114.2C406.2 113.9 472.9 113.9 484.9 113.6L484.9 127.2C462.4 128 439.1 140 426.8 158.9L367.6 281.7C374 297.8 430.9 424.5 436.8 438.4L559.2 155.8C550.6 132.7 522.8 127.7 512 127.5L512 113.6L639.8 114.7L640 115.2z"/></svg></span></button></a>
-            
-        
+      
+            <a href="https://en.wikipedia.org/wiki/Lok_Sabha"><button><span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M640 115.2L639.7 127.4C611.6 128.2 594.7 143.2 583.9 167.7C558.9 225.5 480.6 407.7 428.6 526.3L415 526.3L333.1 333.2C300.6 396.8 264.8 463.2 233.9 526.3C233.6 526.6 218.9 526.3 218.9 526C172 416.3 122.8 307.4 75.8 197.4C64.4 170.7 26.4 127.4 .2 127.7C.2 124.6-.1 117.7-.1 113.5L161.8 113.5L161.8 127.4C142.6 128.5 109 140.7 118.5 161.6C140.4 211.3 222.1 401.9 244.1 450.2C259.1 420.5 301.9 341 319.4 307.4C305.5 279.1 260.8 173.5 246.6 147.4C236.9 129.6 210.5 128 190.8 127.7L190.8 113.8L333.3 114.1L333.3 127.2C313.9 127.8 295.2 135 303.9 153.3C322.8 193.3 334.5 221.4 352 258C357.6 247.2 386.7 188.6 400.1 157.2C409 136.6 396.2 128.6 361.5 127.8C361.8 124.2 361.5 117.5 361.8 114.2C406.2 113.9 472.9 113.9 484.9 113.6L484.9 127.2C462.4 128 439.1 140 426.8 158.9L367.6 281.7C374 297.8 430.9 424.5 436.8 438.4L559.2 155.8C550.6 132.7 522.8 127.7 512 127.5L512 113.6L639.8 114.7L640 115.2z"/></svg>
+            </span></button></a>
+      
     
     </span>
 
-
+        
       </dt>
       <dd>
         
         
     <dl class="contact-list">
       
-        
+      
+        <div class="dl-single-line">
+          <dt><span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M415.9 344L225 344C227.9 408.5 242.2 467.9 262.5 511.4C273.9 535.9 286.2 553.2 297.6 563.8C308.8 574.3 316.5 576 320.5 576C324.5 576 332.2 574.3 343.4 563.8C354.8 553.2 367.1 535.8 378.5 511.4C398.8 467.9 413.1 408.5 416 344zM224.9 296L415.8 296C413 231.5 398.7 172.1 378.4 128.6C367 104.2 354.7 86.8 343.3 76.2C332.1 65.7 324.4 64 320.4 64C316.4 64 308.7 65.7 297.5 76.2C286.1 86.8 273.8 104.2 262.4 128.6C242.1 172.1 227.8 231.5 224.9 296zM176.9 296C180.4 210.4 202.5 130.9 234.8 78.7C142.7 111.3 74.9 195.2 65.5 296L176.9 296zM65.5 344C74.9 444.8 142.7 528.7 234.8 561.3C202.5 509.1 180.4 429.6 176.9 344L65.5 344zM463.9 344C460.4 429.6 438.3 509.1 406 561.3C498.1 528.6 565.9 444.8 575.3 344L463.9 344zM575.3 296C565.9 195.2 498.1 111.3 406 78.7C438.3 130.9 460.4 210.4 463.9 296L575.3 296z"/></svg>
+          </span></dt>
+          <dd>
             
+              <a href="https://sansad.in/ls">https://sansad.in/ls</a>
             
-                <div class="dl-single-line">
-                  <dt><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M415.9 344L225 344C227.9 408.5 242.2 467.9 262.5 511.4C273.9 535.9 286.2 553.2 297.6 563.8C308.8 574.3 316.5 576 320.5 576C324.5 576 332.2 574.3 343.4 563.8C354.8 553.2 367.1 535.8 378.5 511.4C398.8 467.9 413.1 408.5 416 344zM224.9 296L415.8 296C413 231.5 398.7 172.1 378.4 128.6C367 104.2 354.7 86.8 343.3 76.2C332.1 65.7 324.4 64 320.4 64C316.4 64 308.7 65.7 297.5 76.2C286.1 86.8 273.8 104.2 262.4 128.6C242.1 172.1 227.8 231.5 224.9 296zM176.9 296C180.4 210.4 202.5 130.9 234.8 78.7C142.7 111.3 74.9 195.2 65.5 296L176.9 296zM65.5 344C74.9 444.8 142.7 528.7 234.8 561.3C202.5 509.1 180.4 429.6 176.9 344L65.5 344zM463.9 344C460.4 429.6 438.3 509.1 406 561.3C498.1 528.6 565.9 444.8 575.3 344L463.9 344zM575.3 296C565.9 195.2 498.1 111.3 406 78.7C438.3 130.9 460.4 210.4 463.9 296L575.3 296z"/></svg></span></dt>
-                  <dd>
-    
-        
-    <a href="https://sansad.in/ls">https://sansad.in/ls</a>
-
-    
-</dd>
-                </div>
-            
+          </dd>
+        </div>
         
       
-        
-            
-            
-        
+      
       
     </dl>
 
@@ -176,20 +174,18 @@
     
     <dl class="contact-list">
       
-        
-            
-            
-        
       
-        
-            
-            
-        
+      
+      
       
     </dl>
 
     
   </div>
+
+        </div>
+    </div>
+    
   <div class="subordinates">
     
     <hr />
@@ -201,25 +197,9 @@
         
   <dl class="backlink-list">
     
-      
-      
-        <dt>Members (1)</dt>
-        <dd>
-          <ul>
-            
-              <li>
-    <a href="../person/baalutr.html">T. R. Baalu</a>,
-    
-    <a href="../office/mp-ls-sriperumbudur.html">Member of Parliament, Lok Sabha, Sriperumbudur</a>
-</li>
-            
-          </ul>
-        </dd>
-      
-    
-      
-      
-        <dt>Under their responsibility (1)</dt>
+      <dt>
+        Responsible to
+        (1)</dt>
         <dd>
           <ul>
             
@@ -231,7 +211,21 @@
             
           </ul>
         </dd>
-      
+    
+      <dt>
+        Member of
+        (1)</dt>
+        <dd>
+          <ul>
+            
+              <li>
+    <a href="../person/baalutr.html">T. R. Baalu</a>,
+    
+    <a href="../office/mp-ls-sriperumbudur.html">Member of Parliament, Lok Sabha, Sriperumbudur</a>
+</li>
+            
+          </ul>
+        </dd>
     
   </dl>
 
@@ -245,9 +239,11 @@
   <div class="past-tenures">
     
   </div>
-  <div class="sources">
-    
-  </div>
+
+
+    <div class="sources">
+        
+    </div>
 </main>
 
     <footer>
@@ -255,9 +251,9 @@
       <div class="updated">
         
 
-Local version
+Last updated on 2025-09-13
 
-.
+
       </div>
       <div class="attribution">
         Made with <span aria-label="Love" style="color: #f43f5e">&hearts;</span>

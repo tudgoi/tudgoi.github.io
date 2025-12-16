@@ -6,95 +6,134 @@
     <title>The Unofficial Directory — Government of India</title>
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-    <link rel="stylesheet" href="..&#x2F;static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
+    
+    
   </head>
   <body>
     <header>
       <div class="logo">
-        <b><a href="https:&#x2F;&#x2F;tudgoi.github.io&#x2F;">The Unofficial Directory — Government of India</a></b>
+        <b><a href="https://tudgoi.github.io/">The Unofficial Directory — Government of India</a></b>
       </div>
       <div class="toolbar">
         
-        <a href="/new/person">New Person</a>
-        <a href="/new/office">New Office</a>
+
+
         
+        
+
+
+
       </div>
     </header>
     
-<style>
-  main {
-    display: grid;
-    column-gap: 1em;
-    row-gap: 0.5em;
-    grid-template-areas:
-      "toolbar"
-      "title"
-      "photo"
-      "contacts"
-      "quondams"
-      "sources";
-    margin-bottom: 1em;
-  }
-  @media (min-width: 40em) {
-    main {
-      grid-template-columns: 1fr 3fr;
-      grid-template-rows: min-content min-content 1fr 1fr auto auto;
-      grid-template-areas:
-        "toolbar toolbar"
-        "photo title"
-        "photo contacts"
-        "quondams quondams"
-        "sources sources";
-    }
-  }
-</style>
 <main>
-  <div class="toolbar">
-    
-  </div>
-  <div class="photo">
-    
+    <style>
+        .content-top {
+            display: grid;
+            column-gap: 1em;
+            row-gap: 0.5em;
+            grid-template-areas:
+                "content-title"
+                "content-left"
+                "content-right";
+            margin-bottom: 1em;
+        }
+
+        @media (min-width: 40em) {
+            .content-top {
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: min-content 1fr;
+                grid-template-areas:
+                    "content-left content-title"
+                    "content-left content-right"
+            }
+        }
+
+        div.toolbar {
+            grid-area: toolbar;
+        }
+
+        div.content-title {
+            grid-area: content-title;
+        }
+
+        div.content-left {
+            grid-area: content-left;
+        }
+
+        div.content-right {
+            grid-area: content-right;
+        }
+    </style>
+    <div class="content-top">
+        <div class="content-title">
+            
+    <h2>
+      Kerala Council of Ministers
       
+    </h2>
     
-        
+    <a href="../person/comkl-vijayan2.html">Second Vijayan ministry</a>
+    
+    <hr />
+
+        </div>
+        <div class="content-left">
+            
+  <div class="photo">
     
     
     <figure>
-            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;65&#x2F;No-Image-Placeholder.svg" alt="Kerala Council of Ministers" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="Kerala Council of Ministers" />
         
     </figure>
 
     
   </div>
-  <div class="title">
-    <h2>Kerala Council of Ministers</h2>
-    
-      <a href="../person/comkl-vijayan2.html">Second Vijayan ministry</a>
-    
-    <hr/>
-  </div>
-    
-  </div>
+
+        </div>
+        <div class="content-right">
+            
   <div class="contacts">
     
   </div>
+  <div class="supervisors">
+    
+    <hr>
+    <dl>
+      
+      <div class="dl-single-line">
+        <dt>Head</dt>
+        <dd><a href="../office/cmokl.html">Chief Minister of Kerala</a></dd>
+      </div>
+      
+    </dl>
+    
+  </div>
+</div>
 
+        </div>
+    </div>
+    
   <div class="quondams">
     
   </div>
-  <div class="sources">
-    
-  </div>
+
+
+    <div class="sources">
+        
+    </div>
 </main>
 
     <footer>
       <hr/>
       <div class="updated">
         
-  
-  Local version
-  
-.
+
+Last updated on 2025-09-13
+
+
       </div>
       <div class="attribution">
         Made with <span aria-label="Love" style="color: #f43f5e">&hearts;</span>

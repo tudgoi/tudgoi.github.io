@@ -6,115 +6,161 @@
     <title>The Unofficial Directory — Government of India</title>
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-    <link rel="stylesheet" href="..&#x2F;static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
+    
+    
   </head>
   <body>
     <header>
       <div class="logo">
-        <b><a href="https:&#x2F;&#x2F;tudgoi.github.io&#x2F;">The Unofficial Directory — Government of India</a></b>
+        <b><a href="https://tudgoi.github.io/">The Unofficial Directory — Government of India</a></b>
       </div>
       <div class="toolbar">
         
-        <a href="/new/person">New Person</a>
-        <a href="/new/office">New Office</a>
+
+
         
+        
+
+
+
       </div>
     </header>
     
-<style>
-  main {
-    display: grid;
-    column-gap: 1em;
-    row-gap: 0.5em;
-    grid-template-areas:
-      "toolbar"
-      "title"
-      "photo"
-      "contacts"
-      "quondams"
-      "sources";
-    margin-bottom: 1em;
-  }
-  @media (min-width: 40em) {
-    main {
-      grid-template-columns: 1fr 3fr;
-      grid-template-rows: min-content min-content 1fr 1fr auto auto;
-      grid-template-areas:
-        "toolbar toolbar"
-        "photo title"
-        "photo contacts"
-        "quondams quondams"
-        "sources sources";
-    }
-  }
-</style>
 <main>
-  <div class="toolbar">
-    
-  </div>
-  <div class="photo">
+    <style>
+        .content-top {
+            display: grid;
+            column-gap: 1em;
+            row-gap: 0.5em;
+            grid-template-areas:
+                "content-title"
+                "content-left"
+                "content-right";
+            margin-bottom: 1em;
+        }
+
+        @media (min-width: 40em) {
+            .content-top {
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: min-content 1fr;
+                grid-template-areas:
+                    "content-left content-title"
+                    "content-left content-right"
+            }
+        }
+
+        div.toolbar {
+            grid-area: toolbar;
+        }
+
+        div.content-title {
+            grid-area: content-title;
+        }
+
+        div.content-left {
+            grid-area: content-left;
+        }
+
+        div.content-right {
+            grid-area: content-right;
+        }
+    </style>
+    <div class="content-top">
+        <div class="content-title">
+            
+    <h2>
+      Minister for Law
+      
+      
+    <span class="ext-links">
     
       
     
-        
+    </span>
+
+      
+    </h2>
+    
+    <a href="../person/regupats.html">S. Regupathy</a>
+    
+    <hr />
+
+        </div>
+        <div class="content-left">
+            
+  <div class="photo">
     
     
     <figure>
-            <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;65&#x2F;No-Image-Placeholder.svg" alt="Minister for Law" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="Minister for Law" />
         
     </figure>
 
     
   </div>
-  <div class="title">
-    <h2>Minister for Law</h2>
-    
-      <a href="../person/regupats.html">S. Regupathy</a>
-    
-    <hr/>
-  </div>
-    
-  </div>
+
+        </div>
+        <div class="content-right">
+            
   <div class="contacts">
     
-      
+    
     <dl class="contact-list">
       
-        
+      
+        <div class="dl-single-line">
+          <dt><span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
+          </span></dt>
+          <dd>
             
+              <a href="mailto:minister_law@tn.gov.in">minister_law@tn.gov.in</a>
             
-                <div class="dl-single-line">
-                  <dt><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg></span></dt>
-                  <dd>
-    
-        <a href="mailto:minister_law@tn.gov.in">minister_law@tn.gov.in</a>
-    
-</dd>
-                </div>
-            
+          </dd>
+        </div>
         
       
     </dl>
 
     
   </div>
+  <div class="supervisors">
+    
+    <hr>
+    <dl>
+      
+      <div class="dl-single-line">
+        <dt>Member of</dt>
+        <dd><a href="../office/comtn.html">Tamil Nadu Council of Ministers</a></dd>
+      </div>
+      
+    </dl>
+    
+  </div>
+</div>
 
+        </div>
+    </div>
+    
   <div class="quondams">
     
   </div>
-  <div class="sources">
-    
-  </div>
+
+
+    <div class="sources">
+        
+    </div>
 </main>
 
     <footer>
       <hr/>
       <div class="updated">
         
-  
-  Local version
-  
-.
+
+Last updated on 2025-09-18
+
+
       </div>
       <div class="attribution">
         Made with <span aria-label="Love" style="color: #f43f5e">&hearts;</span>
